@@ -1,7 +1,7 @@
-package com.fouribnb.notification.applicatoin.mapper;
+package com.fouribnb.notification.application.mapper;
 
-import com.fouribnb.notification.applicatoin.dto.requestDto.CreateNotificationInternalRequest;
-import com.fouribnb.notification.applicatoin.dto.responseDto.NotificationInternalResponse;
+import com.fouribnb.notification.application.dto.requestDto.CreateNotificationInternalRequest;
+import com.fouribnb.notification.application.dto.responseDto.NotificationInternalResponse;
 import com.fouribnb.notification.domain.entity.Notification;
 import com.fouribnb.notification.domain.enums.Type;
 

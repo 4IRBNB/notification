@@ -1,7 +1,7 @@
 package com.fouribnb.notification.presentation.mapper;
 
-import com.fouribnb.notification.applicatoin.dto.requestDto.CreateNotificationInternalRequest;
-import com.fouribnb.notification.applicatoin.dto.responseDto.NotificationInternalResponse;
+import com.fouribnb.notification.application.dto.requestDto.CreateNotificationInternalRequest;
+import com.fouribnb.notification.application.dto.responseDto.NotificationInternalResponse;
 import com.fouribnb.notification.presentation.dto.requestDto.CreateNotificationRequest;
 import com.fouribnb.notification.presentation.dto.responseDto.NotificationResponse;
 

@@ -1,4 +1,4 @@
-package com.fouribnb.notification.applicatoin.dto.requestDto;
+package com.fouribnb.notification.application.dto.requestDto;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
