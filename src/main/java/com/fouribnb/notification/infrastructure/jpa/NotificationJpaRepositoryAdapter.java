@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class NotificationJpaRepositoryImpl implements NotificationRepository {
+public class NotificationJpaRepositoryAdapter implements NotificationRepository {
 
     private final NotificationJpaRepository notificationJpaRepository;
 
@@ -16,5 +16,3 @@ public class NotificationJpaRepositoryImpl implements NotificationRepository {
         return notificationJpaRepository.save(notification);
     }
 }
-
-// 여기서 순환 참조 오류 발생 ...
