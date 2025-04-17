@@ -2,7 +2,9 @@ package com.fouribnb.notification.application.dto.requestDto;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
+import lombok.Builder;
 
+@Builder
 public record CreateNotificationInternalRequest(
     UUID reservationId,
     Long userId,

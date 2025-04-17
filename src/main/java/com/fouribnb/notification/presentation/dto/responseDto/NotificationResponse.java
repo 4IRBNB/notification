@@ -1,6 +1,5 @@
 package com.fouribnb.notification.presentation.dto.responseDto;
 
-import com.fouribnb.notification.domain.enums.Type;
 import java.util.UUID;
 import lombok.Builder;
 
