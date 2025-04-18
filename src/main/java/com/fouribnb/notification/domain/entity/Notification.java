@@ -16,11 +16,15 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.SQLRestriction;
 
 @Entity
 @Getter
 @ToString
 @Table(name = "p_notification")
+@DynamicUpdate
+@SQLRestriction("deleted_at IS NULL")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Notification extends BaseEntity {
 
@@ -32,8 +36,8 @@ public class Notification extends BaseEntity {
     @Column(name = "user_id")
     private Long userId;
 
-    @Column(name = "title")
-    private String title;
+    @Column(name = "reservation_id")
+    private UUID reservationId;
 
     @Column(name = "message")
     private String message;
@@ -46,11 +50,16 @@ public class Notification extends BaseEntity {
     private boolean isSuccess;
 
     @Builder
-    public Notification(Long userId, String title, String message, Type type) {
+    public Notification(UUID notificationId,Long userId, UUID reservationId, String message, Type type) {
+        this.notificationId = notificationId;
         this.userId = userId;
-        this.title = title;
+        this.reservationId = reservationId;
         this.message = message;
         this.type = type;
+    }
+
+    public void setIsSuccess(boolean isSuccess) {
+        this.isSuccess = isSuccess;
     }
 
 }
