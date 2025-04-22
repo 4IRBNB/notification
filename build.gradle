@@ -34,10 +34,7 @@ dependencies {
 	implementation("com.slack.api:bolt-socket-mode:1.45.3")
 
 	// 공통 모듈
-	implementation 'com.fourirbnb:common:1.2.3'
-
-	// H2
-	runtimeOnly 'com.h2database:h2'
+	implementation 'com.fourirbnb:common:1.5.0'
 
 	// swagger
 //	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
@@ -59,7 +56,7 @@ dependencies {
 //	implementation 'io.jsonwebtoken:jjwt:0.12.6'
 
 	// postgresql
-//	implementation 'org.postgresql:postgresql:42.7.5'
+	implementation 'org.postgresql:postgresql:42.7.5'
 
 	// config
 //	implementation 'org.springframework.cloud:spring-cloud-starter-config'
@@ -68,8 +65,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-//	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-//	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
