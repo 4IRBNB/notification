@@ -34,7 +34,7 @@ dependencies {
 	implementation("com.slack.api:bolt-socket-mode:1.45.3")
 
 	// 공통 모듈
-	implementation 'com.fourirbnb:common:1.2.3'
+	implementation 'com.fourirbnb:common:1.5.0'
 
 	// H2
 	runtimeOnly 'com.h2database:h2'
