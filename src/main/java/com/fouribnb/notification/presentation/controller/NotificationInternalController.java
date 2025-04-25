@@ -28,7 +28,6 @@ public class NotificationInternalController {
     @PostMapping
     public BaseResponse<NotificationResponse> createNotification(
         @RequestBody CreateNotificationRequest request) {
-        // CreateNotificationRequest = 예약 서비스에서 전송해주는 데이터 (dto를 infrastructure로 옮겨야 하는가?)
         CreateNotificationInternalRequest internalRequest = NotificationDtoMapper.toCreateInternalDto(
             request);
         NotificationInternalResponse internalResponse = notificationService.createNotification(
