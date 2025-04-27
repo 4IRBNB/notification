@@ -83,3 +83,7 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootJar {
+	archiveFileName = 'notification.jar'
+}
